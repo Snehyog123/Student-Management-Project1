@@ -11,6 +11,7 @@ import com.BikkadIT.StudentManagement.model.Student;
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Serializable>{
 
+	// This is the Our Custom Methods
 	public Student findByRollno(int rollno);
 	
 	public List<Student> findByName(String name);
